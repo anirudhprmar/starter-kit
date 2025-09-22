@@ -15,6 +15,7 @@ import { toast } from "sonner";
 import { useRouter } from "next/navigation";
 import { useEffect, useState, type RefObject } from "react";
 import { env } from "~/env";
+import { BorderBeam } from "~/components/ui/border-beam";
 
 type SubscriptionDetails = {
   id: string;
@@ -117,14 +118,23 @@ export default function PricingTable({
   };
 
   return (
-    <section className="flex flex-col items-center justify-center px-4  w-full min-h-screen pt-10 md:pt-15" ref={ref}>
-      <div className="text-center mb-12">
-        <h1 className="text-4xl font-medium tracking-tight mb-4">
-          Pricing
-        </h1>
-        <p className="text-xl text-muted-foreground">
-        Choose your learning journey and unlock unlimited vocabulary growth
-        </p>
+    <section className="flex flex-col items-center justify-center px-4  w-full min-h-screen" >
+
+      <div className="text-center mb-12 flex flex-col items-center justify-center gap-10">
+
+        <div className="overflow-hidden relative rounded-full bg-zinc-900">
+          <span className="text-sm px-2 font-dancing-script font-semibold text-zinc-600">✨Pricing </span>
+          <BorderBeam size={30} duration={10}/>
+        </div>
+
+        <div>
+          <h1 className="text-4xl font-medium tracking-tight mb-4">
+            Fake Pricing
+          </h1>
+          <p className="text-xl text-muted-foreground">
+          Begin your journey of building NOW!!
+          </p>
+        </div>
       </div>
 
       <div className="flex items-center justify-center gap-8 max-w-4xl w-full flex-col md:flex-row ">
@@ -141,10 +151,10 @@ export default function PricingTable({
             </div>
           )}
           <CardHeader>
-            <CardTitle className="text-2xl">1-Year Pass</CardTitle>
-            <CardDescription>Ideal for students and professionals ready to expand their vocabulary</CardDescription>
+            <CardTitle className="text-2xl">Starter</CardTitle>
+            <CardDescription>Perfect for getting started</CardDescription>
             <div className="mt-4 flex items-baseline gap-1">
-              <span className="text-4xl font-bold flex items-center gap-1">$ <span>25</span></span>
+              <span className="text-4xl font-bold flex items-center gap-1">$ <span>99</span></span>
               <span className="text-muted-foreground">usd</span>
             </div>
           </CardHeader>
@@ -221,7 +231,7 @@ export default function PricingTable({
             <CardTitle className="text-2xl">Lifetime Deal</CardTitle>
             <CardDescription>Best value for dedicated learners committed to long-term vocabulary mastery</CardDescription>
             <div className="mt-4 flex items-baseline gap-1">
-              <span className="text-4xl font-bold flex items-center gap-1">$ <span>45</span></span>
+              <span className="text-4xl font-bold flex items-center gap-1">$ <span>250</span></span>
               <span className="text-muted-foreground">usd</span>
             </div>
           </CardHeader>

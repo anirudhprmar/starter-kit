@@ -1,8 +1,9 @@
 import "~/styles/globals.css";
 
 import { type Metadata } from "next";
-import { Geist } from "next/font/google";
-
+import { Raleway,Rasa,Dancing_Script } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next"
+import { Providers } from "./providers";
 import { TRPCReactProvider } from "~/trpc/react";
 
 export const metadata: Metadata = {
@@ -11,18 +12,33 @@ export const metadata: Metadata = {
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
-const geist = Geist({
+const raleway = Raleway({
   subsets: ["latin"],
-  variable: "--font-geist-sans",
+  variable: "--font-raleway",
+});
+
+const rasa = Rasa({
+  subsets: ["latin"],
+  variable: "--font-rasa",
+});
+
+const dancing_script = Dancing_Script({
+  subsets: ["latin"],
+  variable: "--font-dancing-script",
 });
 
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${geist.variable}`}>
+    <html lang="en" className={`${raleway.className} ${rasa.className} ${dancing_script.className}`} suppressHydrationWarning>
       <body>
-        <TRPCReactProvider>{children}</TRPCReactProvider>
+        <Providers>
+          <TRPCReactProvider>
+            {children}
+            <Analytics />
+          </TRPCReactProvider>
+        </Providers>
       </body>
     </html>
   );

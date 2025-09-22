@@ -1,5 +1,4 @@
 @import "tailwindcss";
-/* @import "tw-animate-css"; */
 
 @custom-variant dark (&:is(.dark *));
 
@@ -44,9 +43,15 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  --font-raleway:var(--font-raleway);
+  --font-rasa:var(--font-rasa);
+  --font-dancing-script:var(--font-dancing-script);
 }
 
 :root {
+  --font-raleway: 'Raleway', sans-serif;
+  --font-rasa: 'Rasa', serif;
+  --font-dancing-script: 'Dancing Script', cursive;
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -123,3 +128,25 @@
     @apply bg-background text-foreground;
   }
 }
+
+h1, h2, h3, nav {
+  font-family: var(--font-raleway);
+  font-weight: 800;
+  letter-spacing: 0.01em;
+}
+
+.accent, .feature-highlight, h4 {
+font-family: var(--font-dancing-script);
+font-weight: 400;
+/* font-size: 1.25em; */
+font-style: italic;
+letter-spacing: 0.01em;
+}
+
+body, p, li {
+font-family: var(--font-rasa);
+font-weight: 400;
+/* font-size: 1.07em; */
+line-height: 1.7;
+}
+
