@@ -97,7 +97,7 @@ export function EmailSignupForm({
                   <FormItem>
                     <FormLabel>Email</FormLabel>
                     <FormControl>
-                      <Input placeholder="m@example.com" type="email" required {...field} />
+                      <Input placeholder="johndoe@example.com" type="email" required {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>

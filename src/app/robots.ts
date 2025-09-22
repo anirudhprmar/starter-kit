@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: ["/"],
       disallow: ["/sign-in", "/sign-up", "/dashboard"],
     },
-    sitemap: "https://Starter Kit.top/sitemap.xml",
+    // sitemap: "https://starter-kit-vercel.com/sitemap.xml",
   };
 }

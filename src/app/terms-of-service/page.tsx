@@ -29,7 +29,7 @@ export default function TermsOfService() {
                   1. Acceptance of Terms
                 </h2>
                 <p className="leading-relaxed">
-                  By accessing and using Apple Pass (&apos;Service&apos;), you
+                  By accessing and using Next Js Starter Kit (&apos;Service&apos;), you
                   accept and agree to be bound by the terms and provisions of
                   this agreement. If you do not agree to abide by the above,
                   please do not use this Service.
@@ -41,11 +41,13 @@ export default function TermsOfService() {
                   2. Description of Service
                 </h2>
                 <p className="leading-relaxed">
-                  Apple Pass provides a platform for creating, managing, and
-                  distributing digital passes for Apple Wallet. Our Service
-                  includes tools for designing passes, managing pass data,
-                  tracking pass usage, and sending push notifications to pass
-                  holders.
+                  Next Js Starter Kit provides scaffolding, components, and
+                  utilities to help you rapidly build and ship Next.js
+                  applications. Our Service may include authentication
+                  integrations, UI components, basic data handling patterns, and
+                  example configurations to accelerate development. The exact
+                  features enabled depend on how you configure and use the
+                  starter kit in your project.
                 </p>
               </section>
 
@@ -126,8 +128,8 @@ export default function TermsOfService() {
                       laws or regulations
                     </li>
                     <li>
-                      Create passes that contain false, misleading, or
-                      fraudulent information
+                      Upload or publish content that is false, misleading, or
+                      fraudulent
                     </li>
                     <li>
                       Impersonate any person or entity or misrepresent your
@@ -160,7 +162,7 @@ export default function TermsOfService() {
                   </h3>
                   <p className="leading-relaxed">
                     The Service and its original content, features, and
-                    functionality are owned by Apple Pass and are protected by
+                    functionality are owned by Next Js Starter Kit and are protected by
                     international copyright, trademark, patent, trade secret,
                     and other intellectual property laws.
                   </p>
@@ -219,7 +221,7 @@ export default function TermsOfService() {
                   9. Limitation of Liability
                 </h2>
                 <p className="leading-relaxed uppercase font-medium">
-                  To the maximum extent permitted by law, Apple Pass shall not
+                  To the maximum extent permitted by law, Next Js Starter Kit shall not
                   be liable for any indirect, incidental, special,
                   consequential, or punitive damages, or any loss of profits or
                   revenues, whether incurred directly or indirectly, or any loss
@@ -246,7 +248,7 @@ export default function TermsOfService() {
                   10. Indemnification
                 </h2>
                 <p className="leading-relaxed">
-                  You agree to defend, indemnify, and hold harmless Apple Pass
+                  You agree to defend, indemnify, and hold harmless Next Js Starter Kit
                   and its affiliates, officers, directors, employees, and agents
                   from and against any claims, liabilities, damages, judgments,
                   awards, losses, costs, expenses, or fees arising out of or
@@ -302,14 +304,14 @@ export default function TermsOfService() {
                   at:
                 </p>
                 <div className="mt-3 space-y-1">
-                  <p>Email: legal@applepass.com</p>
+                  <p>Email: [Your Legal Contact Email]</p>
                   <p>Address: [Your Company Address]</p>
                 </div>
               </section>
 
               <section className="pt-8 border-t border-gray-200 dark:border-gray-700">
                 <p className="text-sm text-gray-600 dark:text-gray-400">
-                  By using Apple Pass, you acknowledge that you have read,
+                  By using Next Js Starter Kit, you acknowledge that you have read,
                   understood, and agree to be bound by these Terms of Service.
                 </p>
               </section>

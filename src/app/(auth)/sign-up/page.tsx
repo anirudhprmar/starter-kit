@@ -33,17 +33,8 @@ function SignInContent() {
         </CardHeader>
         <CardContent>
           <div className="grid gap-4">
-             <div>
-              <EmailSignupForm/>
-            </div>
 
-             <div className="after:border-border relative text-center text-sm after:absolute after:inset-0 after:top-1/2 after:z-0 after:flex after:items-center after:border-t">
-            <span className="bg-background text-muted-foreground relative z-10 px-2">
-              Or
-            </span>
-          </div>
-
-            <div
+          <div
               className={cn(
                 "w-full gap-2 flex items-center",
                 "justify-between flex-col",
@@ -110,6 +101,17 @@ function SignInContent() {
                 Login with Google
               </Button>
             </div>
+          
+             <div className="after:border-border relative text-center text-sm after:absolute after:inset-0 after:top-1/2 after:z-0 after:flex after:items-center after:border-t">
+            <span className="bg-background text-muted-foreground relative z-10 px-2">
+              Or
+            </span>
+          </div>
+
+             <div>
+              <EmailSignupForm/>
+            </div>
+            
            
           </div>
         </CardContent>

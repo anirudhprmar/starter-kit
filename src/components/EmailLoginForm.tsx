@@ -82,7 +82,7 @@ export function EmailLoginForm({
                   <FormItem>
                     <FormLabel>Username</FormLabel>
                     <FormControl>
-                      <Input placeholder="m@example.com" type="text" required {...field} />
+                      <Input placeholder="John Doe" type="text" required {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -95,7 +95,7 @@ export function EmailLoginForm({
                   <FormItem>
                     <FormLabel>Email</FormLabel>
                     <FormControl>
-                      <Input placeholder="m@example.com" type="email" required {...field} />
+                      <Input placeholder="johndoe@example.com" type="email" required {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -103,7 +103,7 @@ export function EmailLoginForm({
               />
 
             <Button type="submit" className="w-full" disabled={loading}>
-              {loading ? <Loader2 className="size-4 animate-spin"/> : "Login with email"}
+              {loading ? <Loader2 className="size-4 animate-spin"/> : "Sign in with email"}
             </Button>
             </div>
       </form>

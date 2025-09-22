@@ -22,7 +22,7 @@ export const env = createEnv({
       RESEND_API_KEY:z.string(),
       POLAR_ACCESS_TOKEN:z.string(),
       POLAR_WEBHOOK_SECRET:z.string(),
-      POLAR_SUCCESS_URL:z.url(),
+      POLAR_SUCCESS_URL:z.string(),
       R2_UPLOAD_IMAGE_ACCESS_KEY_ID:z.string(),
       R2_UPLOAD_IMAGE_SECRET_ACCESS_KEY:z.string(),
       CLOUDFLARE_ACCOUNT_ID:z.string(),
