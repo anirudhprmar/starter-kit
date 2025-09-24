@@ -13,6 +13,5 @@ vercel ai sdk - ai integration
 fully optimized for seo
 
 
-- [ ]- work on 404 page
-- [X]- work on Links of landing page
-- [ ]- fix the gaps in landing page
+- [X]- fix the gaps in landing page/ dark mode
+- [X]- work on 404 page

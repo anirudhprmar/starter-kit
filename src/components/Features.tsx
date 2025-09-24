@@ -11,7 +11,7 @@ export default function Features() {
         <div className="flex flex-col gap-10 items-center justify-center">
 
           <div className="relative overflow-hidden rounded-full bg-zinc-900">
-            <span className="text-sm px-2 font-dancing-script font-semibold text-zinc-600">✨ PowerHouse of Modern Tools </span>
+            <span className="text-sm px-2 font-dancing-script font-semibold text-zinc-600 ">✨ PowerHouse of Modern Tools </span>
             <BorderBeam size={30} duration={10}/>
           </div>
 

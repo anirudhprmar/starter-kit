@@ -123,7 +123,7 @@ export default function PricingTable({
       <div className="text-center mb-12 flex flex-col items-center justify-center gap-10">
 
         <div className="overflow-hidden relative rounded-full bg-zinc-900">
-          <span className="text-sm px-2 font-dancing-script font-semibold text-zinc-600">✨Pricing </span>
+          <span className="text-sm px-2 font-dancing-script font-semibold text-zinc-600 ">✨Pricing </span>
           <BorderBeam size={30} duration={10}/>
         </div>
 
@@ -137,7 +137,7 @@ export default function PricingTable({
         </div>
       </div>
 
-      <div className="flex items-center justify-center gap-8 max-w-4xl w-full flex-col md:flex-row ">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-fit ">
         {/* Starter Tier */}
         <Card className="relative h-fit">
           {isCurrentPlan(STARTER_TIER) && (
@@ -161,23 +161,15 @@ export default function PricingTable({
           <CardContent className="space-y-4">
             <div className="flex items-center gap-3">
               <Check className="h-5 w-5 text-green-500" />
-              <span>Add Unlimited Words</span>
+              <span>Limited features</span>
             </div>
             <div className="flex items-center gap-3">
               <Check className="h-5 w-5 text-green-500" />
-              <span>Practice Unlimited Times</span>
-            </div>
-            <div className="flex items-center gap-3">
-              <Check className="h-5 w-5 text-green-500" />
-              <span>Unlimited AI conversations</span>
+              <span>Limited AI usage</span>
             </div>
             <div className="flex items-center gap-3">
               <Check className="h-5 w-5 text-green-500" />
               <span>Track progress with detailed insights</span>
-            </div>
-            <div className="flex items-center gap-3">
-              <Check className="h-5 w-5 text-green-500" />
-              <span>Learn and grow with the community</span>
             </div>
           </CardContent>
           <CardFooter>
@@ -215,7 +207,7 @@ export default function PricingTable({
             )}
           </CardFooter>
         </Card>
-
+            {/* Lifetime Tier */}
         <Card className="relative h-fit">
           {isCurrentPlan(LIFETIME_TIER) && (
             <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
@@ -229,7 +221,7 @@ export default function PricingTable({
           )}
           <CardHeader>
             <CardTitle className="text-2xl">Lifetime Deal</CardTitle>
-            <CardDescription>Best value for dedicated learners committed to long-term vocabulary mastery</CardDescription>
+            <CardDescription>Best value for dedicated folks</CardDescription>
             <div className="mt-4 flex items-baseline gap-1">
               <span className="text-4xl font-bold flex items-center gap-1">$ <span>250</span></span>
               <span className="text-muted-foreground">usd</span>
@@ -238,23 +230,15 @@ export default function PricingTable({
           <CardContent className="space-y-4">
             <div className="flex items-center gap-3">
               <Check className="h-5 w-5 text-green-500" />
-              <span>Add Unlimited Words</span>
+              <span>Access to all futures features</span>
             </div>
             <div className="flex items-center gap-3">
               <Check className="h-5 w-5 text-green-500" />
-              <span>Practice Unlimited Times</span>
+              <span>Request new features</span>
             </div>
             <div className="flex items-center gap-3">
               <Check className="h-5 w-5 text-green-500" />
-              <span>Unlimited AI conversations</span>
-            </div>
-            <div className="flex items-center gap-3">
-              <Check className="h-5 w-5 text-green-500" />
-              <span>Track progress with detailed insights</span>
-            </div>
-            <div className="flex items-center gap-3">
-              <Check className="h-5 w-5 text-green-500" />
-              <span>Learn and grow with the community</span>
+              <span>Get access to community</span>
             </div>
           </CardContent>
           <CardFooter>

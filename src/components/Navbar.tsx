@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Navbar() {
   return (
-    <header className="border-b p-3">
+    <header className="fixed border-b p-3 min-w-full bg-neutral-950 z-50">
       <nav className="flex justify-between items-center">
         <div className="text-2xl">
           <p className="font-bold">
@@ -18,8 +18,8 @@ export default function Navbar() {
             Log in
             </Link>
             </li>
-          <li className="cursor-pointer bg-zinc-700 p-1 rounded-sm">
-            <Link href="/sign-up" className="text-xl">
+          <li className="cursor-pointer bg-primary dark:bg-primary-foreground  p-1 rounded-sm">
+            <Link href="/sign-up" className="text-xl text-white">
             Sign up
             </Link>
             </li>

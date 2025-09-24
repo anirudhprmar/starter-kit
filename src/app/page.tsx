@@ -9,12 +9,12 @@ import PricingSection from "~/components/PricingSection";
 export default async function Home() {
 
   return (
-    <>
+    <div className="flex flex-col items-center">
     <Navbar/>
     <HeroSection/>
     <Features/>
     <PricingSection/>
     <Footer/>
-    </>
+    </div>
   );
 }
