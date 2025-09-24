@@ -9,7 +9,10 @@ export default function Footer() {
             © 2025 Anirudh Parmar, All rights reserved
           </p>
           <p className="text-xl">
-            <Link href={'https://x.com/anirudhprmar'} >
+            <Link href={'https://x.com/anirudhprmar'} 
+              rel="noopener noreferrer"
+              target="_blank"
+            >
             X
             </Link>
           </p>

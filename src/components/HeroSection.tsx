@@ -2,6 +2,7 @@ import React from 'react'
 import { Button } from './ui/button'
 import { ArrowRight } from 'lucide-react'
 import { BorderBeam } from './ui/border-beam'
+import Link from 'next/link'
 
 export default function HeroSection() {
   return (
@@ -29,9 +30,21 @@ export default function HeroSection() {
           
           <div className="space-y-4">
             <div className="flex items-center justify-center gap-2">
-            <Button size={'lg'} variant={'default'} className="flex text-xl cursor-pointer justify-center items-center">⚡Get Started <ArrowRight className="ml-2 size-4"/> </Button>
+            <Button size={'lg'} variant={'default'} >
+              <Link href='/pricing' className="flex text-xl cursor-pointer justify-center items-center">
+              ⚡Get Started <ArrowRight className="ml-2 size-4"/>
+              </Link>
+               </Button>
 
-            <Button size={'lg'} variant={'secondary'} className="flex text-xl cursor-pointer justify-center items-center">Github </Button>
+            <Button size={'lg'} variant={'secondary'} className="flex text-xl cursor-pointer justify-center items-center">
+              <Link 
+               href="https://github.com/anirudhprmar/starter-kit.git"
+              rel="noopener noreferrer"
+              target="_blank"
+              >
+              Github 
+              </Link>
+              </Button>
 
             </div>
           </div>

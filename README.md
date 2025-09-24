@@ -14,5 +14,5 @@ fully optimized for seo
 
 
 - [ ]- work on 404 page
-- [ ]- work on Links of landing page
+- [X]- work on Links of landing page
 - [ ]- fix the gaps in landing page

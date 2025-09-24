@@ -12,7 +12,7 @@ export default function FeatureCard({tech,imgSrc,desc,url}:{tech:string,imgSrc:s
     
    <Card className='bg-primary text-primary-foreground transform  transition-all hover:scale-105'>
   <CardContent>
-    <Link href={url} >
+    <Link href={url} target='_blank'>
         <Image src={`/${imgSrc}`} height={40} width={40} alt="next js logo" className="rounded-full "/>
         <p className="text-2xl font-bold">{tech}</p>
         <span>{desc}...</span>
