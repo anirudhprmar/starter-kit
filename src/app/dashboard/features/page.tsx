@@ -1,22 +1,12 @@
-import { auth } from "~/lib/auth"
-import { headers } from "next/headers"
-import { redirect } from "next/navigation"
 import { isUserSubscribed } from "~/lib/subscription"
 import Link from "next/link"
 import { Button } from "~/components/ui/button"
-import Welcome from "./_components/Welcome"
 
-export default async function Dashboard() {
-  const session = await auth.api.getSession({
-    headers:await headers()
-  })
 
-  if(!session) {
-        redirect("/")
-    }
-const username = session.user.name
-// const userId = session.user.id
- const isSubscribed = await isUserSubscribed()
+
+export default async function Features() {
+  
+    const isSubscribed = await isUserSubscribed()
 
     if (!isSubscribed) {
         return ( <div className="absolute inset-0 z-10 rounded-lg  flex items-center justify-center">
@@ -25,7 +15,7 @@ const username = session.user.name
             Subscription Required
           </h3>
           <p className="text-muted-foreground mb-4">
-            You need an active subscription to access dashboard
+            You need an active subscription to access features.
           </p>
           <Link href="/pricing">
             <Button>Subscribe Now</Button>
@@ -35,7 +25,5 @@ const username = session.user.name
     
     }
 
-
-  // return <DashboardDisplay userId={userId} username={username} />
-  return <Welcome name={username} />
+  return <p>You can add similar pages for different features</p>
 }

@@ -13,7 +13,8 @@ vercel ai sdk - ai integration
 fully optimized for seo
 
 
-- [X]- work on landing page 
-- [ ]- work on dashboard 
-- [ ]- work on pricing (sandbox)
+- [X]- work on dashboard (add links to site header)
+- [X]- work on pricing (set up webhook)
 - [ ]- work on 404 page
+- [ ]- work on Links of landing page
+- [ ]- fix the gaps in landing page
