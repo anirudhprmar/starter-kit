@@ -8,7 +8,7 @@ import {
 } from "~/components/ui/card";
 import { getSubscriptionDetails } from "~/lib/subscription";
 import Link from "next/link";
-import ManageSubscription from "./_components/manage-subscription";
+import ManageSubscription from "./_components/manage-subscription"
 
 export default async function PaymentPage() {
   const subscriptionDetails = await getSubscriptionDetails();
@@ -16,11 +16,11 @@ export default async function PaymentPage() {
   return (
     <div>
       <div className="p-6 space-y-4">
-        <div className="relative min-h-screen">
+        <div className="relative min-h-100 overflow-y-hidden">
           {!subscriptionDetails.hasSubscription ||
           subscriptionDetails.subscription?.status !== "active" ? (
             <>
-              <div className="absolute inset-0 z-10 rounded-lg flex items-center justify-center">
+              <div className="absolute inset-0 z-10 rounded-lg top-40 flex items-center justify-center">
                 <div className="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg text-center max-w-md">
                   <h3 className="text-xl font-semibold mb-2">
                     Subscription Required
