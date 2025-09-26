@@ -15,7 +15,7 @@ import { useEffect } from "react";
 export default function SuccessPage() {
   const router = useRouter();
 
-  useEffect(() => { router.refresh(); }, []);
+  useEffect(() => { router.refresh(); }, [router]);
   
   const go = async()=>{
     router.push("/dashboard")

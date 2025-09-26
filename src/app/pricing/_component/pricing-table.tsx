@@ -13,7 +13,7 @@ import { authClient } from "~/lib/auth-client";
 import { Check } from "lucide-react";
 import { toast } from "sonner";
 import { useRouter } from "next/navigation";
-import { useEffect, useState, type RefObject } from "react";
+import { useEffect, useState } from "react";
 import { env } from "~/env";
 import { BorderBeam } from "~/components/ui/border-beam";
 
@@ -42,14 +42,10 @@ interface PricingTableProps {
   subscriptionDetails: SubscriptionDetailsResult;
 }
 
-interface props{
-    ref?: RefObject<HTMLElement | null>;
-}
 
 export default function PricingTable({
-  ref,
   subscriptionDetails
-}: props & PricingTableProps ) {
+}: PricingTableProps ) {
   const router = useRouter();
   const [isAuthenticated, setIsAuthenticated] = useState<boolean | null>(null);
 
