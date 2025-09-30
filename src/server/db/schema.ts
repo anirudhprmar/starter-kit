@@ -105,3 +105,40 @@ export const subscription = createTable("subscription",(d) =>({
   customFieldData: d.text("customFieldData"), // JSON string
   userId: d.text("userId").references(() => user.id),
 }));
+
+export const oneTimePurchase = createTable("oneTimePurchase", (d) => ({
+  // Primary order fields
+  id: d.text("id").primaryKey(),
+  createdAt: d.timestamp("createdAt").notNull(),
+  modifiedAt: d.timestamp("modifiedAt"),
+  status: d.text("status").notNull(), // "paid", "pending", "failed", etc.
+  paid: d.boolean("paid").notNull().default(false),
+
+  // Amount breakdown fields
+  subtotalAmount: d.integer("subtotalAmount").notNull(),
+  discountAmount: d.integer("discountAmount").default(0),
+  netAmount: d.integer("netAmount").notNull(),
+  taxAmount: d.integer("taxAmount").default(0),
+  totalAmount: d.integer("totalAmount").notNull(),
+  refundedAmount: d.integer("refundedAmount").default(0),
+  refundedTaxAmount: d.integer("refundedTaxAmount").default(0),
+  currency: d.text("currency").notNull(),
+  
+  // Billing information
+  billingReason: d.text("billingReason").default("purchase"),
+  billingName: d.text("billingName"),
+  billingAddress: d.text("billingAddress"), // JSON string for address object
+  isInvoiceGenerated: d.boolean("isInvoiceGenerated").default(false),
+  
+  // Relationship fields
+  customerId: d.text("customerId").notNull(),
+  productId: d.text("productId").notNull(),
+  discountId: d.text("discountId"),
+  subscriptionId: d.text("subscriptionId"), // Can be null for one-time purchases
+  checkoutId: d.text("checkoutId").notNull(),
+  userId: d.text("userId").references(() => user.id),
+  
+  // Additional data
+  metadata: d.text("metadata"), // JSON string
+  customFieldData: d.text("customFieldData"), // JSON string
+}));
